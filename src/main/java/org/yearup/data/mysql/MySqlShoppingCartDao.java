@@ -104,12 +104,12 @@ public class MySqlShoppingCartDao extends MySqlDaoBase implements ShoppingCartDa
         jdbcTemplate.update(sql, quantity, userId, productId);
     }
 
-    @Override
-    public void removeItem(int userId, int productId)
-    {
-        String sql = "DELETE FROM shopping_cart WHERE user_id = ? AND product_id = ?;";
-        jdbcTemplate.update(sql, userId, productId);
-    }
+//    @Override
+//    public void removeItem(int userId, int productId)
+//    {
+//        String sql = "DELETE FROM shopping_cart WHERE user_id = ? AND product_id = ?;";
+//        jdbcTemplate.update(sql, userId, productId);
+//    }
 
     @Override
     public void clearCart(int userId)
