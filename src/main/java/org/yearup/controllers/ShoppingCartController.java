@@ -17,7 +17,7 @@ import java.security.Principal;
 @RestController
 @RequestMapping("/cart")
 @CrossOrigin
-@PreAuthorize("")
+@PreAuthorize("isAuthenticated()")
 // only logged in users should have access to these actions
 public class ShoppingCartController
 {
