@@ -112,7 +112,7 @@ public class User {
    @JsonIgnore
    public String getRole()
    {
-      if(authorities.size() > 0)
+      if(authorities != null && authorities.size() > 0)
       {
          for(Authority role: authorities)
          {
