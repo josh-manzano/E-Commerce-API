@@ -22,7 +22,6 @@ EasyShop is a Java Spring Boot-based e-commerce platform that allows users to br
 
 - Java 17
 - Spring Boot
-- Thymeleaf (or raw HTML templates)
 - JDBC / DAO Pattern
 - MySQL
 - Postman for API testing
